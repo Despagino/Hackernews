@@ -17,7 +17,7 @@ struct ContentView: View {
         NavigationView {
             
             // for every single "post" in our posts array
-            List(posts) { post in
+            List(netWorkManager.posts) { post in
                 
                 Text(post.title)
                 
