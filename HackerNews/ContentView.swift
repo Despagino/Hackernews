@@ -24,6 +24,9 @@ struct ContentView: View {
             }
             .navigationTitle("Hacker News")
         }
+        .onAppear {
+            netWorkManager.fetchData()
+        }
     }
 }
 
