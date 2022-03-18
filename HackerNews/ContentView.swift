@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    @ObservedObject var netWorkManager = NetworkManager()
+    
+    
     var body: some View {
         NavigationView {
             
@@ -29,8 +34,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-let posts = [
-Post(id: "1", title: "Hello"),
-Post(id: "2", title: "Youre cool I guess"),
-Post(id: "3", title: "War is happening")
-]
+
