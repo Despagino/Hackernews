@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NetworkManager {
+class NetworkManager: ObservableObject {
     
     func fetchData() {
         
