@@ -29,17 +29,6 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
-struct Post: Identifiable {
-    
-    // identifiable allows our list to recognize the order of each of your post objects based on our id
-    // for a structure to conform to identifiable it needs to have an id that is a string
-    
-    let id: String
-    let title: String
-    
-}
-
 let posts = [
 Post(id: "1", title: "Hello"),
 Post(id: "2", title: "Youre cool I guess"),
