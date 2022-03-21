@@ -18,12 +18,12 @@ struct ContentView: View {
             
             // for every single "post" in our posts array
             List(netWorkManager.posts) { post in
-                
-                HStack {
-                    Text(String(post.points))
-                    Text(post.title)
+                NavigationLink(destination: DetailView(url: post.url)) {
+                    HStack {
+                        Text(String(post.points))
+                        Text(post.title)
+                    }
                 }
-                
             }
             .navigationTitle("Hacker News")
         }
