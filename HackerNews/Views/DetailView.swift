@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct DetailView: View {
     
@@ -21,4 +22,17 @@ struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailView(url:"https://www.google.com")
     }
+}
+
+struct WebView: UIViewRepresentable {
+    
+    func makeUIView(context: Context) -> some UIView {
+        <#code#>
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        <#code#>
+    }
+    
+    
 }
