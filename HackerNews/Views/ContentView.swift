@@ -19,7 +19,10 @@ struct ContentView: View {
             // for every single "post" in our posts array
             List(netWorkManager.posts) { post in
                 
-                Text(post.title)
+                HStack {
+                    Text(String(post.points))
+                    Text(post.title)
+                }
                 
             }
             .navigationTitle("Hacker News")
